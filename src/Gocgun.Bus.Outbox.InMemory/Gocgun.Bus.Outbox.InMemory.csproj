@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <RootNamespace>Gocgun.Bus.Outbox.InMemory</RootNamespace>
+    <AssemblyName>Gocgun.Bus.Outbox.InMemory</AssemblyName>
+    <PackageId>Gocgun.Bus.Outbox.InMemory</PackageId>
+    <Version>0.1.0</Version>
+    <Authors>Omer Faruk Gocgun</Authors>
+    <Description>In-memory DI-scope outbox that publishes Gocgun.Bus messages only after a unit of work succeeds.</Description>
+    <PackageLicenseExpression>AGPL-3.0-only</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <RepositoryUrl>https://github.com/farukgocgun/crocovity</RepositoryUrl>
+    <IsPackable>true</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Gocgun.Bus\src\Gocgun.Bus\Gocgun.Bus.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="Gocgun.Bus.Outbox.InMemory.Tests" />
+  </ItemGroup>
+</Project>
