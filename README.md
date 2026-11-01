@@ -4,9 +4,9 @@
 >
 > It references `Gocgun.Bus` through a sibling `ProjectReference`; the base package repository must sit next to this one to build. Publish order: `Gocgun.Bus` first.
 
-AGPLv3 buffer that holds `Gocgun.Bus` messages until a unit of work succeeds.
+Buffer that holds `Gocgun.Bus` messages until a unit of work succeeds.
 
-License: AGPL-3.0-only (`LICENSE`). Copyright holder exception: `LICENSE-EXCEPTION`.
+License: MIT (`LICENSE`).
 
 `IInMemoryOutbox.PublishAsync` and `SendAsync` append to the current DI scope. Nothing reaches `IMessageBus` until `FlushAsync`. `IInMemoryOutboxUnit.ExecuteAsync` flushes after the delegate returns and discards the buffer when the delegate throws.
 
