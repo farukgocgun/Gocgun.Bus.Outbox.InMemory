@@ -8,7 +8,7 @@
     <Description>In-memory DI-scope outbox that publishes Gocgun.Bus messages only after a unit of work succeeds.</Description>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <RepositoryUrl>https://github.com/farukgocgun/crocovity</RepositoryUrl>
+    <RepositoryUrl>https://github.com/farukgocgun/Gocgun.Bus.Outbox.InMemory</RepositoryUrl>
     <IsPackable>true</IsPackable>
   </PropertyGroup>
 
